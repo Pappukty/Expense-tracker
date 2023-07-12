@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Static HTML-CSS-JavaScript Projects</title>
+
+    <!-- FontAwesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./script.js" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Expense tracker</h2>
+    <div class="container" id="container">
+      <h4 class="title">your balance</h4>
+      <span class="amount" id="amount">$7000</span>
+      <div class="inc-exp-container" id="inc-exp-container">
+        <div class="money">
+          <h4>Expense</h4>
+          <p id="money-plus" class="money-plus">+$.0.00</p>
+        </div>
+        <div class="money">
+          <h4>income</h4>
+          <p id="money-minus" class="money-minus">+$.0.00</p>
+        </div>
+      </div>
+      <h4 class="title-1">history</h4>
+      <ul class="list" id="list">
+        <li class="minus" id="minus">
+          cash <span>$.500</span><button class="delete-btn">x</button>
+        </li>
+
+        <li class="plus" id="plus">
+          salary <span>$.300</span><button class="delete-btn">x</button>
+        </li>
+      </ul>
+      <form action="#" id="form">
+        <div class="form-control">
+          <label for="amount" class="sub-title"
+            >Transaction<br />
+            <input
+              type="text"
+              id="Transaction"
+              class="Transaction"
+              placeholder="Transaction"
+            />
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="amount" class="sub-title"
+            >Amount (negative-expense, positive-income)<br />
+            <input
+              type="number"
+              id="amount"
+              placeholder="Enter-amount"
+              class="amount"
+            />
+          </label>
+        </div>
+        <button class="btn-transaction" id="click">add Transaction</button>
+      </form>
+    </div>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
